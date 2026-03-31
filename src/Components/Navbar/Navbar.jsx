@@ -21,9 +21,11 @@ const Navbar = ({ purchesCarts }) => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-3">
-                    <div className='relative'>
+                    <div className='relative mt-7'>
+                        {
+                            purchesCarts.length == 0? "":<p className='bg-red-500 text-sm text-center px-0.5 rounded-full absolute -top-4 -right-2 text-white'>{purchesCarts.length}</p>
+                        }
                         <a href="#" className='mr-5'><BsCart></BsCart></a>
-                        <p className='bg-red-500 text-sm text-center px-0.5 rounded-full absolute -top-4 -right-2 text-white'>{purchesCarts.length}</p>
                     </div>
                     <a href="#"><button>Login</button></a>
                     <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Get Started</a>
