@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for beginners who want to create a professional resume quickly.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Download as PDF"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/rocket.png"
+  },
+  {
+    "id": 2,
+    "name": "Basic Plan",
+    "description": "Essential tools for creating simple and clean resumes.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "25+ templates",
+      "Basic editing tools",
+      "Export to PDF",
+      "Email support"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/document.png"
+  },
+  {
+    "id": 3,
+    "name": "Standard Plan",
+    "description": "Great for regular job seekers who need more flexibility.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "50+ templates",
+      "Advanced customization",
+      "Export to PDF & Word",
+      "Cover letter builder"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/resume.png"
+  },
+  {
+    "id": 4,
+    "name": "Pro Plan",
+    "description": "Advanced tools for job seekers to stand out with optimized resumes.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Cover letter builder",
+      "Priority email support"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/star.png"
+  },
+  {
+    "id": 5,
+    "name": "Advanced Plan",
+    "description": "Powerful features for professionals aiming for top-tier jobs.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "150+ templates",
+      "ATS optimization",
+      "LinkedIn optimization",
+      "Export to multiple formats",
+      "Real-time preview"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/infinity.png"
+  },
+  {
+    "id": 6,
+    "name": "Premium Plan",
+    "description": "All-in-one solution with premium templates and career tools.",
+    "price": 79.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited templates",
+      "ATS optimization",
+      "Export to PDF & Word",
+      "LinkedIn profile optimization",
+      "Priority support"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/crown.png"
+  },
+  {
+    "id": 7,
+    "name": "Career Plus",
+    "description": "Includes coaching tools and advanced career insights.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited templates",
+      "Career coaching tips",
+      "Interview preparation guides",
+      "Resume analytics",
+      "Priority support"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/conference.png"
+  },
+  {
+    "id": 8,
+    "name": "Executive Plan",
+    "description": "Designed for executives and senior professionals.",
+    "price": 149.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Executive templates",
+      "Personal branding tools",
+      "LinkedIn premium optimization",
+      "One-on-one consultation",
+      "Premium support"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/businessman.png"
+  },
+  {
+    "id": 9,
+    "name": "Enterprise Plan",
+    "description": "Best for teams and organizations managing multiple resumes.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Team management",
+      "Shared templates",
+      "Bulk resume creation",
+      "Admin dashboard",
+      "Dedicated support"
+    ],
+    "icon": "https://img.icons8.com/fluency/48/company.png"
+  }
+]
