@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TiTick } from 'react-icons/ti';
+import { toast } from 'react-toastify';
 
 const Cart = ({plan, purchesCarts, setPurchesCarts }) => {   
     
@@ -8,8 +9,16 @@ const Cart = ({plan, purchesCarts, setPurchesCarts }) => {
 
     const handleBuyNow = ()=> {
         setIsBuyNow(true);
+
+        const isBuyNow = purchesCarts.find((item) => item.id === plan.id)
+
+        if(isBuyNow){
+            toast.error('This Product already added')
+            return
+        }
+        
         setPurchesCarts([...purchesCarts, plan]);      
-        alert(plan.name);
+        toast(plan.name);
     }
 
     return (

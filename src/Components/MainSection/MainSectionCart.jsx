@@ -13,7 +13,7 @@ const MainSectionCart = ({ plansPromise, purchesCarts, setPurchesCarts }) => {
         <div className=''>
             <div className='flex items-center justify-center gap-3 my-5 text-base font-bold'>
                 <button onClick={()=> setActiveTeb('Products')}
-                className='btn btn-primary rounded-full'>Products</button>
+                className={`btn ${activeTab=='Products'}? btn-primary : btn-outline  rounded-full`}>Products</button>
                 <button onClick={()=> setActiveTeb('Cart')}
                 className='btn btn-primary rounded-full'
                 >Carts ({purchesCarts.length})</button>

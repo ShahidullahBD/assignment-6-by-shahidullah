@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const bgLinear = 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]';
 
@@ -8,12 +9,13 @@ const PurchesedCart = ({purchesCarts, setPurchesCarts}) => {
     
     const handlePayment = () => {
         setPurchesCarts([])
-        alert('Payment Successful')
+        toast.success('Payment Successful')
     }
 
     const handDelete = (cart) => {
         const filteredArr = purchesCarts.filter(c => c.id !== cart.id)
         setPurchesCarts(filteredArr)
+        toast.warning('Plan deleted')
     }
    
     return (
