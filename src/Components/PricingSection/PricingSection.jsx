@@ -4,6 +4,7 @@ import { TiTick } from 'react-icons/ti';
 const PricingSection = () => {
 
     const bgLinear = 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]';
+    const textLinear = 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text text-transparent bg-clip-text';
 
     return (
         <div className='w-[70%] mx-auto'>
@@ -12,90 +13,95 @@ const PricingSection = () => {
                 <p className='mb-5'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 my-10'>
-                <div className='p-6 border rounded-2xl space-y-3 relative'>                    
+                <div className='flex flex-col p-6 border rounded-2xl space-y-3 relative'>                    
                     <h3 className='text-2xl font-bold'>Starter</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Perfect for getting started</p>
                     <p><span className='text-2xl font-bold'>$0</span>/Month</p>
                     <div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Access to 10 free tools</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Basic templates</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Community support</p>
+                        </div>
+                        <div className='flex items-center gap-1'>
+                            <TiTick className='text-green-600'></TiTick>
+                            <p>1 project per month</p>
                         </div>
                     </div>
-                    <button className={`${bgLinear} btn btn-primary w-full rounded-full mt-2 text-white`}>Get Started Free</button>
+                    <button className={`${bgLinear} btn btn-primary w-full rounded-full text-white mt-auto`}>Get Started Free</button>
                 </div>
-                <div className={`${bgLinear} p-6 border rounded-2xl space-y-3 relative text-white`}>                    
-                    <p className='absolute -top-3.5 right-33 px-3 py-1 bg-amber-400 rounded-full'>Most Popular</p>
+                <div className={`${bgLinear} p-6 border rounded-2xl space-y-3 relative text-white flex flex-col`}>                    
+                    <p className='absolute -top-3.5 right-27 px-3 py-1 bg-amber-400 rounded-full'>Most Popular</p>
                     <h3 className='text-2xl font-bold'>Pro</h3>
                     <p>Best for professionals</p>
                     <p><span className='text-2xl font-bold'>$29</span>/Month</p>
                     <div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Access to all premium tools</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Unlimited templates</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Priority support</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Unlimited projects</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Cloud sync</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Advanced analytics</p>
                         </div>
                     </div>
-                    <button className={`btn btn-primary w-full rounded-full mt-2 text-white`}>Get Started Free</button>
+                    <button className={`btn w-full rounded-full text-blue-800 mt-auto`}> 
+                        <span className={`${textLinear}`}>Start Pro Trial</span> </button>
                 </div>
-                <div className='p-6 border rounded-2xl space-y-3 relative'>                    
-                    <h3 className='text-2xl font-bold'>Starter</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div className='flex flex-col p-6 border rounded-2xl space-y-3 relative'>                    
+                    <h3 className='text-2xl font-bold'>Enterprise</h3>
+                    <p>For teams and businesses</p>
                     <p><span className='text-2xl font-bold'>$0</span>/Month</p>
                     <div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Everything in Pro</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Team collaboration</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Custom integrations</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Dedicated support</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>SLA guarantee</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <TiTick className='text-green-600'></TiTick>
-                            <p>2000+ templates</p>
+                            <p>Custom branding</p>
                         </div>
                     </div>
-                    <button className={`${bgLinear} btn btn-primary w-full rounded-full mt-2 text-white`}>Get Started Free</button>
+                    <button className={`${bgLinear} btn btn-primary w-full rounded-full mt-auto text-white`}>Contact Sales</button>
                 </div>
             </div>
         </div>
