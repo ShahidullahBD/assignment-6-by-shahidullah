@@ -11,7 +11,7 @@ const PricingSection = () => {
                 <h2 className='text-5xl font-bold text-black mb-3'>Simple, Transparent Pricing</h2>
                 <p className='mb-5'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
-            <div className='grid grid-cols-3 gap-10 my-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 my-10'>
                 <div className='p-6 border rounded-2xl space-y-3 relative'>                    
                     <h3 className='text-2xl font-bold'>Starter</h3>
                     <p>Lorem ipsum dolor sit amet.</p>

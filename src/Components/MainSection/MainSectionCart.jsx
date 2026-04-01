@@ -19,7 +19,7 @@ const MainSectionCart = ({ plansPromise, purchesCarts, setPurchesCarts }) => {
                 >Carts ({purchesCarts.length})</button>
             </div>
 
-            {activeTab === 'Products' && <div className='w-[70%] grid grid-cols-3 gap-10 mx-auto my-10'>
+            {activeTab === 'Products' && <div className='w-[70%] grid lg:grid-cols-3 grid-cols-2 gap-10 mx-auto my-10'>
                 {
                     plans.map(plan =>
                         <Cart key={plan.id} plan={plan} purchesCarts={purchesCarts} setPurchesCarts={setPurchesCarts} />

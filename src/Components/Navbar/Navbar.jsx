@@ -4,7 +4,7 @@ import { BsCart } from 'react-icons/bs';
 
 const Navbar = ({ purchesCarts }) => {
     return (
-        <div className='w-[80%] mx-auto'>
+        <div>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">                   
                     <a className="btn btn-ghost text-xl">

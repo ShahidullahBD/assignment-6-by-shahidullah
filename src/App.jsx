@@ -12,34 +12,36 @@ import PricingSection from './Components/PricingSection/PricingSection'
 import StateSection from './Components/State/StateSection'
 
 
-const getPlans = async ()=>{
+const getPlans = async () => {
   const res = await fetch('/data.json')
   return res.json()
 }
 
 const plansPromise = getPlans();
 
-function App() { 
+function App() {
 
   const [purchesCarts, setPurchesCarts] = useState([]);
-  
-  
+
+
 
   return (
     <>
-    <Navbar purchesCarts={purchesCarts}/>
-    <hr />
-      <div className='flex justify-center items-center my-20 gap-15'>
-        <BannerContent/>
-        <BannerImage/>
+        <Navbar purchesCarts={purchesCarts} />
+        <hr />
+      <div className='w-[70%] mx-auto'>
+        <div className='lg:flex lg:justify-center lg:items-center my-20 gap-15 block'>
+          <BannerContent />
+          <BannerImage />
+        </div>
       </div>
-      <StateSection/>
-      <MainSectionHeader/>
-      <MainSectionCart plansPromise={plansPromise} purchesCarts={purchesCarts} setPurchesCarts={setPurchesCarts}/>      
-      <GetStart/>
-      <PricingSection/>
-      <FooterTop/>
-      <FooterBottom/>
+        <StateSection />
+        <MainSectionHeader />
+        <MainSectionCart plansPromise={plansPromise} purchesCarts={purchesCarts} setPurchesCarts={setPurchesCarts} />
+        <GetStart />
+        <PricingSection />
+        <FooterTop />
+        <FooterBottom />
     </>
   )
 }

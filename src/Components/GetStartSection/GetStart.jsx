@@ -15,7 +15,7 @@ const GetStart = () => {
                 <h2 className='text-5xl font-bold text-black'>Get Started in 3 Steps</h2>
                 <p className='my-5'>Start using premium digital tools in minutes, not hours.</p>
             </div>
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
 
                 {/* Card-1 */}
                 <div className='card border shadow-lg p-5 flex items-center space-y-4 relative my-10'>
