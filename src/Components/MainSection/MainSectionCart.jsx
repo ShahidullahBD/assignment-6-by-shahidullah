@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import Cart from './Cart';
 import PurchesedCart from './PurchesedCart';
+import EmptyCart from './EmptyCart';
 
 const MainSectionCart = ({ plansPromise, purchesCarts, setPurchesCarts }) => {
 
@@ -11,11 +12,11 @@ const MainSectionCart = ({ plansPromise, purchesCarts, setPurchesCarts }) => {
 
     return (
         <div className=''>
-            <div className='flex items-center justify-center gap-3 my-5 text-base font-bold'>
+            <div className='flex items-center justify-center text-xl font-bold'>
                 <button onClick={()=> setActiveTeb('Products')}
-                className={`btn ${activeTab=='Products'}? btn-primary : btn-outline  rounded-full`}>Products</button>
+                className={`btn ${activeTab==='Products'? 'btn btn-primary' : 'btn btn-outline'} rounded-l-full`}>Products</button>
                 <button onClick={()=> setActiveTeb('Cart')}
-                className='btn btn-primary rounded-full'
+                className={`btn ${activeTab==='Cart'? 'btn btn-primary' : 'btn btn-outline'} rounded-r-full`}
                 >Carts ({purchesCarts.length})</button>
             </div>
 
@@ -26,9 +27,16 @@ const MainSectionCart = ({ plansPromise, purchesCarts, setPurchesCarts }) => {
                     )
                 }
             </div>}
+
+            {purchesCarts.length===0 &&  <div className='w-[70%] mx-auto my-5'>
+                <EmptyCart/>
+            </div>
+            }
+
            {activeTab === "Cart" && <div>
                 <PurchesedCart purchesCarts={purchesCarts} setPurchesCarts={setPurchesCarts}/>
             </div>}
+
         </div>
     );
 };
